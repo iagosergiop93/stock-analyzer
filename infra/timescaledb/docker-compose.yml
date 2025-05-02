@@ -1,0 +1,13 @@
+services:
+  db:
+    image: timescale/timescaledb:latest-pg14
+    container_name: tsdb
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: youruser
+      POSTGRES_PASSWORD: yourpassword
+    volumes:
+      - tsdb-data:/var/lib/postgresql/data
+volumes:
+  tsdb-data:
