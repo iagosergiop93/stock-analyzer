@@ -92,4 +92,4 @@ for ticker in selected:
 
 # ─── Footer ───────────────────────────────────────────────────────────────────
 st.markdown("---")
-st.caption("Data sourced from Yahoo Finance via yfinance, stored in TimescaleDB.")
+st.caption("Data sourced from Yahoo Finance via yfinance.")
